@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="SpringView">
+    <attr name="tension" format="integer"/>
+    <attr name="friction" format="integer"/>
+    <attr name="clamp_low" format="float"/>
+    <attr name="clamp_high" format="float"/>
+  </declare-styleable>
+  <declare-styleable name="ScrollMiddleLayout">
+    <attr name="max_offset" format="integer"/>
+  </declare-styleable>
+  <declare-styleable name="PullToZoomView">
+    <attr name="headerView" format="reference"/>
+    <attr name="contentView" format="reference"/>
+    <attr name="zoomView" format="reference"/>
+    <attr name="isHeaderParallax" format="boolean"/>
+  </declare-styleable>
+  <!-- StrokedTextView specific attributes. -->
+  <declare-styleable name="StrokedTextView">
+    <!-- The color of the stroke outline -->
+    <attr name="strokeViewColor" format="reference|color"/>
+    <!-- The color of the text -->
+    <attr name="strokeTextColor" format="reference|color"/>
+    <!-- The width of the stroke -->
+    <attr name="strokeOutlineWidth" format="reference|float"/>
+
+    <attr name="gradient" format="reference|boolean"/>
+    <attr name="startColor" format="reference|color"/>
+    <attr name="endColor" format="reference|color"/>
+    <attr name="text_bold" format="reference|boolean"/>
+    <attr name="shadow_color" format="reference|color"/>
+    <attr name="text_font">
+      <enum name="aff_bold" value="1"/>
+      <enum name="aff_black" value="2"/>
+      <enum name="baskerville" value="3"/>
+      <enum name="baskerville_bold_mini" value="4"/>
+      <enum name="fire_car" value="5"/>
+      <enum name="game_fb_result_score_num" value="6"/>
+      <enum name="game_fb_result_text" value="7"/>
+      <enum name="georgia_mini" value="8"/>
+      <enum name="super_car_title" value="9"/>
+      <enum name="yuanti_001_status" value="10"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="LevelProgress">
+    <!--中央进度条的高度-->
+    <attr name="reachedProgressBarHeight" format="reference|float"/>
+    <!--中央进度条的颜色-->
+    <attr name="reachedBarColor" format="color"/>
+    <attr name="innerBitmap" format="reference"/>
+    <attr name="innerRound" format="dimension"/>
+  </declare-styleable>
+  <declare-styleable name="HandselUserView">
+    <attr name="hasCrownBg" format="reference|boolean"/>
+    <!--皇冠-->
+    <attr name="crownSrc" format="reference"/>
+    <!--低标-->
+    <attr name="tagSrc" format="reference"/>
+    <attr name="titleText" format="reference|string"/>
+    <attr name="desText" format="reference|string"/>
+  </declare-styleable>
+
+
+  <declare-styleable name="AddAndSubView">
+    <attr name="maxNum" format="reference|integer"/>
+    <attr name="minNum" format="reference|integer"/>
+    <attr name="septum" format="reference|integer"/>
+    <!--是否有无限-->
+    <attr name="hasLimitless" format="reference|boolean"/>
+    <attr name="longClickable" format="reference|boolean"/>
+    <attr name="longClickSpeed" format="reference|integer"/>
+  </declare-styleable>
+
+
+  <declare-styleable name="CircleImageView">
+    <attr name="civ_border_width" format="dimension"/>
+    <attr name="civ_border_color" format="color"/>
+    <attr name="civ_border_overlay" format="boolean"/>
+    <attr name="civ_fill_color" format="color"/>
+  </declare-styleable>
+
+  <declare-styleable name="SwitchButton">
+    <attr name="kswThumbDrawable" format="reference"/>
+    <attr name="kswThumbColor" format="color|reference"/>
+    <attr name="kswThumbMargin" format="dimension|reference"/>
+    <attr name="kswThumbMarginTop" format="dimension|reference"/>
+    <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+    <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+    <attr name="kswThumbMarginRight" format="dimension|reference"/>
+    <attr name="kswThumbWidth" format="dimension|reference"/>
+    <attr name="kswThumbHeight" format="dimension|reference"/>
+    <attr name="kswThumbRadius" format="dimension|reference"/>
+    <attr name="kswBackRadius" format="dimension|reference"/>
+    <attr name="kswBackDrawable" format="reference"/>
+    <attr name="kswBackColor" format="color|reference"/>
+    <attr name="kswFadeBack" format="boolean"/>
+    <attr name="kswBackMeasureRatio" format="float"/>
+    <attr name="kswAnimationDuration" format="integer"/>
+    <attr name="kswTintColor" format="color|reference"/>
+    <attr name="kswTextOn" format="string"/>
+    <attr name="kswTextOff" format="string"/>
+    <attr name="kswTextSize" format="dimension|reference"/>
+    <attr name="kswTextMarginH" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="WaveView">
+    <attr name="above_wave_color" format="color"/>
+    <attr name="blow_wave_color" format="color"/>
+    <attr name="progress" format="integer"/>
+    <attr name="wave_length" format="enum">
+      <enum name="large" value="1"/>
+      <enum name="middle" value="2"/>
+      <enum name="little" value="3"/>
+    </attr>
+    <attr name="wave_height" format="enum">
+      <enum name="large" value="1"/>
+      <enum name="middle" value="2"/>
+      <enum name="little" value="3"/>
+    </attr>
+    <attr name="wave_hz" format="enum">
+      <enum name="fast" value="1"/>
+      <enum name="normal" value="2"/>
+      <enum name="slow" value="3"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="Themes">
+    <attr name="waveViewStyle" format="reference"/>
+  </declare-styleable>
+  <declare-styleable name="RainbowTextView">
+    <attr name="rainbow_drawable" format="reference"/>
+  </declare-styleable>
+  <declare-styleable name="MainTabIconImageView">
+    <attr name="tab_type" format="string"/>
+    <attr name="default_icon" format="reference"/>
+    <attr name="default_selected_icon" format="reference"/>
+    <attr name="single_click_state" format="boolean"/>
+  </declare-styleable>
+  <declare-styleable name="MainTabNameTextView">
+    <attr name="name_tab_type" format="string"/>
+    <attr name="default_color" format="reference"/>
+    <attr name="default_selected_color" format="reference"/>
+    <attr name="name_single_click_state" format="boolean"/>
+  </declare-styleable>
+  <declare-styleable name="CircularFillableLoaders">
+    <attr name="cfl_progress" format="integer"/>
+    <attr name="cfl_border" format="boolean"/>
+    <attr name="cfl_border_width" format="dimension"/>
+    <attr name="cfl_wave_color" format="color"/>
+    <attr name="cfl_wave_amplitude" format="float"/>
+  </declare-styleable>
+  <declare-styleable name="CanvasView">
+    <attr name="canvas_width" format="dimension"/>
+    <attr name="canvas_height" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="TabMenuLayout">
+    <attr name="indicatorColor" format="color"/>
+    <attr name="tabunderlineColor" format="color"/>
+    <attr name="tabdividerColor" format="color"/>
+    <attr name="tabindicatorHeight" format="dimension"/>
+    <attr name="tabunderlineHeight" format="dimension"/>
+    <attr name="tabdividerPadding" format="dimension"/>
+    <attr name="tabPaddingLeftRight" format="dimension"/>
+    <attr name="tabscrollOffset" format="dimension"/>
+    <attr name="tabMenuBackground" format="reference"/>
+    <attr name="tabshouldExpand" format="boolean"/>
+    <attr name="tabtextAllCaps" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="PercentLayout_Layout">
+    <attr name="layout_widthPercent" format="string"/>
+    <attr name="layout_heightPercent" format="string"/>
+    <attr name="layout_marginPercent" format="string"/>
+    <attr name="layout_marginLeftPercent" format="string"/>
+    <attr name="layout_marginTopPercent" format="string"/>
+    <attr name="layout_marginRightPercent" format="string"/>
+    <attr name="layout_marginBottomPercent" format="string"/>
+    <attr name="layout_marginStartPercent" format="string"/>
+    <attr name="layout_marginEndPercent" format="string"/>
+    <attr name="layout_textSizePercent" format="string"/>
+  </declare-styleable>
+
+  <declare-styleable name="tab_style">
+    <attr name="titleBarBackground" format="color"/>
+    <attr name="titleBarTextColor" format="color"/>
+    <attr name="backTint" format="color"/>
+    <attr name="titleBarHeight" format="dimension"/>
+    <attr name="tabTitleTextSize" format="dimension"/>
+    <attr name="tabButtonTextSize" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="RoundedImageView">
+    <attr name="riv_corner_radius" format="dimension"/>
+    <attr name="riv_corner_radius_top_left" format="dimension"/>
+    <attr name="riv_corner_radius_top_right" format="dimension"/>
+    <attr name="riv_corner_radius_bottom_left" format="dimension"/>
+    <attr name="riv_corner_radius_bottom_right" format="dimension"/>
+    <attr name="riv_border_width" format="dimension"/>
+    <attr name="riv_border_color" format="color"/>
+    <attr name="riv_mutate_background" format="boolean"/>
+    <attr name="riv_oval" format="boolean"/>
+    <attr name="android:scaleType"/>
+    <attr name="riv_tile_mode">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr>
+    <attr name="riv_tile_mode_x">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr>
+    <attr name="riv_tile_mode_y">
+      <enum name="clamp" value="0"/>
+      <enum name="repeat" value="1"/>
+      <enum name="mirror" value="2"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="MagicTextView">
+    <attr name="innerShadowColor" format="color"/>
+    <attr name="innerShadowRadius" format="dimension"/>
+    <attr name="innerShadowDx" format="dimension"/>
+    <attr name="innerShadowDy" format="dimension"/>
+
+    <attr name="outerShadowColor" format="color"/>
+    <attr name="outerShadowRadius" format="dimension"/>
+    <attr name="outerShadowDx" format="dimension"/>
+    <attr name="outerShadowDy" format="dimension"/>
+
+    <attr name="typeface" format="string"/>
+
+    <attr name="foreground" format="reference|color"/>
+    <attr name="mBackground" format="reference|color"/>
+
+    <attr name="mstrokeWidth" format="dimension"/>
+    <attr name="strokeMiter" format="dimension"/>
+    <attr name="mstrokeColor" format="color"/>
+    <attr name="strokeJoinStyle">
+      <enum name="miter" value="0"/>
+      <enum name="bevel" value="1"/>
+      <enum name="round" value="2"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="TagCloudView">
+    <attr name="tcvBackground" format="reference"/>
+    <attr name="tcvTextColor" format="color"/>
+    <attr name="tcvBorder" format="dimension"/>
+    <attr name="tcvTextSize" format="dimension"/>
+    <attr name="tcvBorderItem" format="dimension"/>
+    <attr name="tcvItemBorderVertical" format="dimension"/>
+    <attr name="tcvItemBorderHorizontal" format="dimension"/>
+
+    <attr name="tcvSingleLine" format="boolean"/>
+    <attr name="tcvShowEndText" format="boolean"/>
+    <attr name="tcvShowRightImg" format="boolean"/>
+    <attr name="tcvEndText" format="string"/>
+    <attr name="tcvRightResId" format="reference"/>
+    <attr name="tcvCanTagClick" format="boolean"/>
+
+    <attr name="tcvTagResId" format="reference"/>
+  </declare-styleable>
+
+  <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+  <declare-styleable name="ButtonBarContainerTheme">
+    <attr name="metaButtonBarStyle" format="reference"/>
+    <attr name="metaButtonBarButtonStyle" format="reference"/>
+  </declare-styleable>
+
+  <declare-styleable name="PtrFrameLayout">
+    <!-- Optional. If you put header and content in xml, you can you these to specify them. -->
+    <attr name="ptr_header" format="reference"/>
+    <attr name="ptr_content" format="reference"/>
+
+    <!-- the resistance when you are moving the frame -->
+    <attr name="ptr_resistance" format="float"/>
+
+    <!-- the ration of the height of the header to trigger refresh -->
+    <attr name="ptr_ratio_of_header_height_to_refresh" format="float"/>
+
+    <attr name="ptr_duration_to_close" format="integer"/>
+    <attr name="ptr_duration_to_close_header" format="integer"/>
+
+    <!-- pull to refresh, otherwise release to refresh, default is release to refresh -->
+    <attr name="ptr_pull_to_fresh" format="boolean"/>
+
+    <!-- keep header when refreshing-->
+    <attr name="ptr_keep_header_when_refresh" format="boolean"/>
+  </declare-styleable>
+
+  <declare-styleable name="PtrClassicHeader">
+    <attr name="ptr_rotate_ani_time" format="integer"/>
+  </declare-styleable>
+
+  <declare-styleable name="WaterDropView">
+    <attr name="max_circle_radius" format="dimension"/>
+    <attr name="min_circle_radius" format="dimension"/>
+    <attr name="waterdrop_color" format="color"/>
+    <attr name="topcircle_x" format="dimension"/>
+    <attr name="topcircle_y" format="dimension"/>
+    <attr name="bottomcircle_x" format="dimension"/>
+    <attr name="bottomcircle_y" format="dimension"/>
+  </declare-styleable>
+
+  <declare-styleable name="PullZoomRecyclerView">
+    <attr name="header_precent" format="float"/>
+  </declare-styleable>
+
+  <declare-styleable name="EmptyView">
+    <attr name="bg" format="reference"/>
+    <attr name="text" format="reference|integer"/>
+  </declare-styleable>
+  <declare-styleable name="SwipeMenuLayout">
+    <attr name="leftViewId" format="reference"/>
+    <attr name="rightViewId" format="reference"/>
+    <attr name="contentViewId" format="reference"/>
+  </declare-styleable>
+
+  <!--&lt;!&ndash;RoundCornerTextView&ndash;&gt;-->
+  <!--<declare-styleable name="SuperTextView">-->
+  <!--<attr name="corner" format="dimension"/>-->
+  <!--<attr name="left_top_corner" format="boolean"/>-->
+  <!--<attr name="right_top_corner" format="boolean"/>-->
+  <!--<attr name="left_bottom_corner" format="boolean"/>-->
+  <!--<attr name="right_bottom_corner" format="boolean"/>-->
+  <!--<attr name="solid" format="reference|color"/>-->
+  <!--<attr name="stroke_width" format="dimension"/>-->
+  <!--<attr name="stroke_color" format="reference|color"/>-->
+  <!--<attr name="state_drawable" format="reference"/>-->
+  <!--<attr name="state_drawable_width" format="dimension"/>-->
+  <!--<attr name="state_drawable_height" format="dimension"/>-->
+  <!--<attr name="state_drawable_padding_left" format="dimension"/>-->
+  <!--<attr name="state_drawable_padding_top" format="dimension"/>-->
+  <!--<attr name="isShowState" format="boolean"/>-->
+  <!--<attr name="text_stroke" format="boolean"/>-->
+  <!--<attr name="text_stroke_color" format="reference|color"/>-->
+  <!--<attr name="text_stroke_width" format="dimension"/>-->
+  <!--<attr name="text_fill_color" format="reference|color"/>-->
+  <!--<attr name="autoAdjust" format="boolean"/>-->
+  <!--<attr name="state_drawable_mode" format="enum">-->
+  <!--<enum name="left" value="0"/>-->
+  <!--<enum name="top" value="1"/>-->
+  <!--<enum name="right" value="2"/>-->
+  <!--<enum name="bottom" value="3"/>-->
+  <!--<enum name="center" value="4"/>-->
+  <!--<enum name="fill" value="5"/>-->
+  <!--<enum name="leftTop" value="6"/>-->
+  <!--<enum name="rightTop" value="7"/>-->
+  <!--<enum name="leftBottom" value="8"/>-->
+  <!--<enum name="rightBottom" value="9"/>-->
+  <!--</attr>-->
+  <!--<attr name="round_corner_tv_font">-->
+  <!--<enum name="aff_bold" value="1"/>-->
+  <!--<enum name="aff_black" value="2"/>-->
+  <!--<enum name="baskerville" value="3"/>-->
+  <!--<enum name="baskerville_bold_mini" value="4"/>-->
+  <!--<enum name="fire_car" value="5"/>-->
+  <!--<enum name="game_fb_result_score_num" value="6"/>-->
+  <!--<enum name="game_fb_result_text" value="7"/>-->
+  <!--<enum name="georgia_mini" value="8"/>-->
+  <!--<enum name="super_car_title" value="9"/>-->
+  <!--<enum name="yuanti_001_status" value="10"/>-->
+  <!--</attr>-->
+  <!--</declare-styleable>-->
+
+  <declare-styleable name="KratosTextView">
+    <attr name="font">
+      <enum name="aff_bold" value="1"/>
+      <enum name="aff_black" value="2"/>
+      <enum name="baskerville" value="3"/>
+      <enum name="baskerville_bold_mini" value="4"/>
+      <enum name="fire_car" value="5"/>
+      <enum name="game_fb_result_score_num" value="6"/>
+      <enum name="game_fb_result_text" value="7"/>
+      <enum name="georgia_mini" value="8"/>
+      <enum name="super_car_title" value="9"/>
+      <enum name="yuanti_001_status" value="10"/>
+    </attr>
+  </declare-styleable>
+
+  <declare-styleable name="DrawableCenterTextView">
+    <attr name="leftDrawable" format="reference|color"/>
+    <attr name="rightDrawable" format="reference|color"/>
+    <attr name="topDrawable" format="reference|color"/>
+    <attr name="bottomDrawable" format="reference|color"/>
+
+    <attr name="leftDrawableWidth" format="reference|dimension"/>
+    <attr name="rightDrawableWidth" format="reference|dimension"/>
+    <attr name="topDrawableWidth" format="reference|dimension"/>
+    <attr name="bottomDrawableWidth" format="reference|dimension"/>
+
+    <attr name="leftDrawableHeight" format="reference|dimension"/>
+    <attr name="rightDrawableHeight" format="reference|dimension"/>
+    <attr name="topDrawableHeight" format="reference|dimension"/>
+    <attr name="bottomDrawableHeight" format="reference|dimension"/>
+  </declare-styleable>
+
+</resources>
+

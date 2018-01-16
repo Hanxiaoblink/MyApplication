@@ -1,0 +1,17 @@
+<resources>
+  <style name="titlebar_activity_style" parent="Base.Theme.AppCompat">
+    <item name="titleBarBackground">@android:color/white</item>
+    <item name="titleBarTextColor">@android:color/black</item>
+    <item name="backTint">@android:color/black</item>
+    <item name="titleBarHeight">48dp</item>
+    <item name="tabTitleTextSize">14dp</item>
+    <item name="tabButtonTextSize">14dp</item>
+  </style>
+
+  <style name="BottomDialog"  parent="Base.Theme.AppCompat">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+</resources>
